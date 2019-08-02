@@ -1,0 +1,28 @@
+<div class="container  mt-2 ">
+
+<app-spinkit *ngIf="loader" ></app-spinkit>
+  <div *ngIf="!loader" class="card text-center containerPersonaje">
+    <div class="card-deck">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="{{ personaje.image }}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ personaje.name }}</h5>
+          <p class="card-text">ESTADO: {{ personaje.status }}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">ESPECIE: {{ personaje.species }}</li>
+          <li class="list-group-item">GENERO: {{ personaje.gender | gender }}</li>
+          <li class="list-group-item">TIPO: {{ personaje.type | type }}</li>
+          <li class="list-group-item">CREADO: {{ personaje.created | date: "medium" }}</li>
+          <li class="list-group-item">ORIGEN: {{ personaje.origin.name }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+.personaje {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.cardPersonaje {
+  left: 500px;
+  width: 400px;
+  height: 450px;
+  text-align: center;
+  background: rgb(51, 51, 51);
+  color: rgb(255, 152, 0);
+}
+
+.containerPersonaje{
+  width: 300px;
+  height: 500px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  left: 400px;
+}
+
+.colorText{
+  color:  rgb(255, 152, 0);
+}

@@ -1,0 +1,25 @@
+
+<div class="container">
+  <br>
+  <div class="d-flex p-6 ">
+    <div class="card-columns text-center">
+      <!-- <div
+        class="card"
+        *ngFor="let datosHeroes of superHeroes ; index as indice ">    |  filter: filterPost      Codgio para habilitar filtrado-->
+        <!-- <img src="{{ datosHeroes.img }}" class="card-img-top" [alt]="datosHeroes.nombre" /> -->
+        <!-- <div class="card-body"> -->
+          <!-- <h5 class="card-title">{{ datosHeroes.nombre | lowercase }}</h5> -->
+          <!-- <p class="card-text">{{ datosHeroes.bio | historiaHeroes }}</p> -->
+          <!-- <p class="card-text">{{ datosHeroes.casa }}</p> -->
+          <!-- <img class="img-fluid" [src]="../assets/img/marvel.ico" width="40" *ngIf="datosHeroes.casa == 'Marvel'" />  -->
+          <!-- <button class="btn btn-success btn-block" [routerLink]="['/heroes', indice]">ver mas...!</button> -->
+        <!-- </div> -->
+      <!-- </div> -->
+      <app-card *ngFor="let personaje of listaPersonajes ; index as indice"
+      [personaje]="personaje"
+      [id]="personaje.id"></app-card>
+    </div>
+  </div>
+  </div>
+
+<router-outlet></router-outlet>
